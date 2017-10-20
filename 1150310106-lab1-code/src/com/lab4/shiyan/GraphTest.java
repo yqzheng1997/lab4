@@ -11,7 +11,7 @@ public class GraphTest {
   public static void main(String[] args) {
     //TODO Auto-generated method stub
     Scanner scan = new Scanner(System.in);
-    System.out.println("鐠囩柉绶崗銉洣鐠囪褰囬惃鍕瀮娴犳儼鐭惧锟�");
+    System.out.println("请输入文件路径：");
     String filepath;//word1,word2,input;
     //String str;
     filepath = scan.nextLine();
