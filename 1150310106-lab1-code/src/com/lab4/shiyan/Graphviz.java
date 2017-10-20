@@ -1,4 +1,4 @@
-package shiyan1;
+package com.lab4.shiyan;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
