@@ -196,11 +196,9 @@ public class Graph {
   
   public void picturebridge(String[] word1,String[] word2,String[] temp,int tcount) {
     int[][] flagedge = new int[N][N];
-    int k = 0;
-    int j = 0;
+    int k = 0，j=0;
     int ti = 0;
-    int ei = 0;
-    int ej = 0;
+    int ei = 0,ej = 0;
     for (k = 0;k < tcount;k++) {
       for (j = 0;j < wordnum;j++) {
         if (temp[k].equals(word[j])) {
@@ -225,7 +223,7 @@ public class Graph {
           if (flagedge[i][j] == 0) {
             gv.addln(word[i] + "->" + word[j] + "[label = " + edge[i][j] + "]");
           } else {
-            gv.addln(word[i] + "[color = red]");
+            gv.addln(word[i] + "[color = orange]");
             gv.addln(word[j] + "[color = red]");
             gv.addln(word[ti] + "[color = red]");
             gv.addln(word[i] + "->" + word[j] + "[color = orange,label = " + edge[i][j] + "]");
@@ -255,6 +253,7 @@ public class Graph {
     int flag1 = -1;
     int b = -1;
     for (i = 0;i < wordnum;i++) {
+      
       if (word[i].equals(word1)) {
         a = i;
         flag = 1;
